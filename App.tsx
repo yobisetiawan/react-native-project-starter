@@ -9,16 +9,19 @@
  */
 
 import React from 'react';
-
+import {Provider} from 'react-redux';
 import {AppWrap} from './src/components';
 
 import Router from './src/routes';
+import {store} from './src/redux/store';
 
 const App = () => {
   return (
-    <AppWrap>
-      <Router />
-    </AppWrap>
+    <Provider store={store}>
+      <AppWrap>
+        <Router />
+      </AppWrap>
+    </Provider>
   );
 };
 
