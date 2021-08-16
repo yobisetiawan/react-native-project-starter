@@ -1,21 +1,24 @@
 import React from 'react';
+import {Heading} from 'native-base';
 import {Text, TouchableWithoutFeedback, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {decrement, increment} from '../../redux/slice/CounterSlice';
 
 import {RootState} from '../../redux/store';
 
-import s from './styles';
+//import s from './styles';
 
 const Component = () => {
   const counter = useSelector((state: RootState) => state.counter);
   const dispatch = useDispatch();
 
   return (
-    <View style={s.wrap}>
+    <View>
       <View>
-        <Text style={s.text}>About</Text>
-        <Text style={s.text}>{counter.value}</Text>
+        <Heading mb={8} size="xl">
+          Akun
+        </Heading>
+        <Text>{counter.value}</Text>
         <TouchableWithoutFeedback
           onPress={() => {
             dispatch(increment());

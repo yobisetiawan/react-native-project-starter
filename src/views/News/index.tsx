@@ -9,7 +9,7 @@ const Component = () => {
   return (
     <View>
       <Heading mb={8} size="xl">
-        Pembelian Tiket
+        Tiket Saya
       </Heading>
     </View>
   );
