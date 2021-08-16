@@ -1,15 +1,5 @@
 import {StyleSheet} from 'react-native';
 
-const styles = StyleSheet.create({
-  wrap: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'red',
-  },
-  text: {
-    color: 'white',
-  },
-});
+const styles = StyleSheet.create({});
 
 export default styles;
